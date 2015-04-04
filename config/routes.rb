@@ -1,6 +1,25 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  get 'games/maze'
 
+  get 'games/ball'
+
+  get 'games/teeter'
+
+  get 'home/index'
+  get 'home/tickets'
+  get 'home/about'
+  get 'home/leaderboards'
+  get 'home/contact'
+  get 'home/signup'
+  get 'home/signin'
+
+  match '/tickets',      to: 'home#tickets',      via: 'get'
+  match '/about',        to: 'home#about',        via: 'get'
+  match '/leaderboards', to: 'home#leaderboards', via: 'get'
+  match '/contact',      to: 'home#contact',      via: 'get'
+  match '/signin',       to: 'home#signin',       via: 'get'
+  match '/signup',       to: 'home#signup',       via: 'get'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

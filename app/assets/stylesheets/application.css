@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+/* Page Layout CSS
+----------------------------------------------------- */
+
+#pageContainer { 
+  padding-top: 90px;
+}
+
+#pageHead { 
+  text-align: center;
+}
+
+img.center {
+	    display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+}
